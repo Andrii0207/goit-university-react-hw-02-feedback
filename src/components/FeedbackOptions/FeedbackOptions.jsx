@@ -1,9 +1,11 @@
-export default function FeedbackOptions({ options, onClick }) {
+import PropTypes from 'prop-types';
+
+export default function FeedbackOptions({ options, onLeaveFeedback }) {
   return (
     <ul>
       {options.map(item => (
         <li key={item}>
-          <button type="button" name={item} onClick={onClick}>
+          <button type="button" name={item} onClick={onLeaveFeedback}>
             {item}
           </button>
         </li>
@@ -11,3 +13,8 @@ export default function FeedbackOptions({ options, onClick }) {
     </ul>
   );
 }
+
+FeedbackOptions.propTypes = {
+  options: PropTypes.arrayOf(PropTypes.string.isRequired),
+  onLeaveFeedback: PropTypes.func.isRequired,
+};
