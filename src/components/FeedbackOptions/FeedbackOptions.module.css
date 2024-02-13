@@ -1,0 +1,25 @@
+.optionList {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.optionItem {
+  padding: 0;
+}
+
+.optionBTN {
+  width: 90px;
+  padding: 8px 20px;
+  border-radius: 4px;
+  border: none;
+}
+
+.optionBTN:hover,
+.optionBTN:focus {
+  background-color: darkorange;
+  color: aliceblue;
+  cursor: pointer;
+}

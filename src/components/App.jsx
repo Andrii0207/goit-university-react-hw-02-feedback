@@ -31,14 +31,20 @@ export class App extends Component {
 
     return (
       <div
-      // style={{
-      //   height: '100vh',
-      //   display: 'flex',
-      //   justifyContent: 'left',
-      //   padding: '30px',
-      //   fontSize: 40,
-      //   color: '#010101',
-      // }}
+        style={{
+          height: '450px',
+          width: '500px',
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'top',
+          alignItems: 'center',
+          padding: '30px',
+          margin: 'auto',
+          fontSize: 30,
+          color: 'aliceblue',
+          backgroundColor: 'darkslateblue',
+          borderRadius: '10px',
+        }}
       >
         <Section title="Please leave feedback">
           <FeedbackOptions
