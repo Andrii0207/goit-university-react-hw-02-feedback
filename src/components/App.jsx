@@ -11,13 +11,13 @@ export class App extends Component {
     bad: 0,
   };
 
-  leaveFeedBack = e => {
+  leaveFeedBack = option => {
     this.setState(prevState => ({
-      [e.target.name]: prevState[e.target.name] + 1,
+      [option]: prevState[option] + 1,
     }));
   };
 
-  countTotalFeedback = e => {
+  countTotalFeedback = () => {
     const values = Object.values(this.state);
     return values.reduce((acc, item) => acc + item);
   };
@@ -40,6 +40,7 @@ export class App extends Component {
           alignItems: 'center',
           padding: '30px',
           margin: 'auto',
+          marginTop: '50px',
           fontSize: 30,
           color: 'aliceblue',
           backgroundColor: 'darkslateblue',
